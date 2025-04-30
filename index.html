@@ -6,18 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="#">
-    <script>
-        const img = document.querySelector('img');
-        fetch('https://api.giphy.com/v1/gifs/translate?api_key=YOUR_KEY_HERE&s=cats',
-         {mode: 'cors'})
-         .then(function(response) {
-            console.log(response.json());
-         })
-         .then(function(response) {
-            console.log(response);
-         });
-    </script>
+    <input type="text" id="pokemonName" placeholder="Enter pokemon name">
+    <button onclick="fetchData()">Fetch pokemon</button><br>
+
+
+    <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
     
 </body>
+
+<script src="logic.js"> </script>
+
 </html>
